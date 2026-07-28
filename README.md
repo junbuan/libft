@@ -1,0 +1,1 @@
+# ftlib-for-42-core-milestone-0
