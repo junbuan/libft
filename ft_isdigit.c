@@ -1,4 +1,4 @@
-int ft_isidigit(int nb)
+int ft_isdigit(int nb)
 {
     if (nb >= '1' && nb <= '9')
         return(1);
