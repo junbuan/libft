@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 13:59:23 by juho              #+#    #+#             */
-/*   Updated: 2026/07/30 13:59:28 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/30 14:16:35 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,14 @@ void *ft_memset(void *s, int c, size_t n)
     }
     return (s);
 }
+/*
+int main(void)
+{
+	char buf[11] = "HelloWorld";
+	
+    ft_memset(buf + 5, 'X', 5);
+    printf("%s\n", buf); // prints "HelloXXXXX"
+	
+    return 0;
+}
+*/
