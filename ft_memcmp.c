@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:11:05 by juho              #+#    #+#             */
-/*   Updated: 2026/07/30 14:12:56 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/31 00:43:06 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int	main(void)
 {
 	char	s1[10] = "Hello";
 	char	s2[10] = "World";
-	printf("%d\n", memcmp(s1, s2, 3));
+	printf("%d\n", ft_memcmp(s1, s2, 3));
 }
 */

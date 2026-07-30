@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:41 by juho              #+#    #+#             */
-/*   Updated: 2026/07/30 14:07:28 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/31 01:55:23 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,9 @@ int ft_isdigit(int nb);
 int ft_isascii(int c);
 int ft_isalpha(int c);
 int ft_isalnum(int c);
+int ft_isprint(int c);
+void ft_bzero(void *s, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+void *ft_memmove(void *dest, const void *src, size_t n);
 
 #endif
