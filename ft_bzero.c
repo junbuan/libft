@@ -6,11 +6,11 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 15:35:40 by juho              #+#    #+#             */
-/*   Updated: 2026/07/29 15:35:41 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/30 13:58:17 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void ft_bzero(void *s, size_t n)
 {

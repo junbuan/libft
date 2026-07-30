@@ -6,11 +6,11 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 15:35:52 by juho              #+#    #+#             */
-/*   Updated: 2026/07/29 16:10:34 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/30 13:59:04 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void *ft_memcopy(void *dest, cons void *src, size_t n)
 {

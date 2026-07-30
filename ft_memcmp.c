@@ -1,4 +1,16 @@
-#include <stddef.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/30 13:57:42 by juho              #+#    #+#             */
+/*   Updated: 2026/07/30 13:57:56 by juho             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -14,3 +26,13 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return 0;
 }
+
+
+/*
+int	main(void)
+{
+	char	s1[10] = "Hello";
+	char	s2[10] = "World";
+	printf("%d\n", memcmp(s1, s2, 3));
+}
+*/
