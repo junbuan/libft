@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/30 13:59:39 by juho              #+#    #+#             */
-/*   Updated: 2026/07/31 22:23:29 by juho             ###   ########.fr       */
+/*   Created: 2026/07/31 12:56:41 by juho              #+#    #+#             */
+/*   Updated: 2026/07/31 22:02:31 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-dst[20] = "Hello"
-src[10] = "World" + size(5)
+int ft_strlen(char *s);
 
-if (dst < size)
-	return (srclen + size); //it means destination buffer is not big enough to store new characters
-while (...)
+size_t ft_strlcpy(char *dst, const char *src, int size)
 {
-	dst[dstlen] =  src[i]
-	dstlen++;
-	i++;
+    int len = ft_strlen(src);
+    if (size > 0)
+    {
+        int i = 0;
+        while (*src && i++ < size - 1)
+            *dst++ = *src++;
+        *dst = '\0';
+    }
+    return (len);
 }
-return (srclen + dstlen);
+
+char   str[3];
+
+str[0] = 'a';
+str[1] = 'b';
+str[2] = 'c';

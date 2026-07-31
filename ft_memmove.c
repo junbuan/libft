@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 13:59:06 by juho              #+#    #+#             */
-/*   Updated: 2026/07/31 12:19:39 by juho             ###   ########.fr       */
+/*   Updated: 2026/07/31 12:21:59 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 		return (dest);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
+	
 	if (d < s)
 	{
 		i = 0;
