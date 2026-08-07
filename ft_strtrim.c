@@ -1,46 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/04 14:37:19 by juho              #+#    #+#             */
-/*   Updated: 2026/08/07 17:58:00 by juho             ###   ########.fr       */
+/*   Created: 2026/08/06 21:30:40 by juho              #+#    #+#             */
+/*   Updated: 2026/08/07 17:41:25 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	char	*ptr;
-	char	*pt1;
-	size_t	i;
-	size_t	j;
-
-	i = start;
-	ptr = malloc(len + 1);
-	pt1 = (char *)s;
+	size_t i;
+	size_t j;
+	size_t len;
+	char * newstr;
+	len = ft_strlen(s1);
 	i = 0;
 	j = 0;
-	while (i < len)
+	
+	while (s1[i] != '\0')
 	{
-		ptr[j] = pt1[i];
-		i++;
-		j++;
+		if (s1[i] == set[j])
+		{
+			i++;
+		}
+		
+		if (s1[len] == set[j])
+		{
+			len--;
+		}
+		
+		while (set[j] != '\0')
+		{
+			j++;
+		}
 	}
-	return (ptr[j] = '\0', ptr);
+	
+	
+	
 }
-/*
-int main(void)
-{
-	// char *s = av[1];
-	// int start = atoi(av[2]);
-	// int len = atoi(av[3]);
-	char	*test =  ft_substr("hello", 0, 3);
-	printf("%s\n", test);
-	free(test);
-}
-*/
-
