@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/29 15:35:40 by juho              #+#    #+#             */
-/*   Updated: 2026/08/03 22:48:52 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/07 20:15:56 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	size_t		i;
+	size_t	i;
 
 	ptr = (unsigned char *)s;
 	i = 0;
@@ -24,4 +24,4 @@ void	ft_bzero(void *s, size_t n)
 		ptr[i] = 0;
 		i++;
 	}
-
+}
