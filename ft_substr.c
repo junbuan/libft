@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 14:37:19 by juho              #+#    #+#             */
-/*   Updated: 2026/08/07 17:58:00 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/10 14:36:21 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = start;
 	ptr = malloc(len + 1);
 	pt1 = (char *)s;
-	i = 0;
 	j = 0;
-	while (i < len)
+	if (!ptr)
+		return (NULL);
+	while (j < len)
 	{
 		ptr[j] = pt1[i];
 		i++;
