@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 00:25:01 by juho              #+#    #+#             */
-/*   Updated: 2026/08/10 14:37:56 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/10 17:04:40 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	len;
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (!s1 || !set)
