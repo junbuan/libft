@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/08 00:25:01 by juho              #+#    #+#             */
-/*   Updated: 2026/08/10 17:04:40 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/11 18:07:15 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int main()
 {
-	char a[] = "xxhelloxx";
-	char b[] = "x";
+	char a[] = "xexhelxloxx";
+	char b[] = "xe";
 	
 	printf("%s", ft_strtrim(a, b));
 }
