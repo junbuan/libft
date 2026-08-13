@@ -6,16 +6,15 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 13:58:46 by juho              #+#    #+#             */
-/*   Updated: 2026/08/07 20:16:48 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/13 21:40:14 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
-	
 }
