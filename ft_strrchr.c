@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/01 17:53:14 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/14 00:14:24 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 		if (s[i] == target)
 			return ((char *)(&s[i]));
 		if (i == 0)
-			break;
+			break ;
 		i--;
 	}
 	return (NULL);

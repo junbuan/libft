@@ -6,16 +6,16 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 13:58:40 by juho              #+#    #+#             */
-/*   Updated: 2026/08/07 20:16:17 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/14 00:11:46 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int nb)
+int	ft_isdigit(int nb)
 {
 	if (nb >= '0' && nb <= '9')
-		return(1);
+		return (1);
 	else
-		return(0);
+		return (0);
 }
