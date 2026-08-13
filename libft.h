@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:41 by juho              #+#    #+#             */
-/*   Updated: 2026/08/13 23:11:29 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/13 23:45:37 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd);
+
 #endif
