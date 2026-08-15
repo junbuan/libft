@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:41 by juho              #+#    #+#             */
-/*   Updated: 2026/08/15 14:56:48 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/15 16:29:34 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,6 @@ void	ft_putchar_fd(char c, int fd);
 typedef struct s_list
 {
 	void			*content;
-	struct s_list	next;
+	struct s_list	*next;
 }	t_list;
 #endif
