@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 13:59:06 by juho              #+#    #+#             */
-/*   Updated: 2026/08/15 16:41:47 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/17 14:21:49 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		i = 0;
 		while (i < n)
 		{
-			d[i] = s[i];
-			i++;
+			*d++ = *s++;
 		}
 	}
-	else if (d > s)
+	else
 	{
 		while (n > 0)
 		{
