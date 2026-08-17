@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 14:50:01 by juho              #+#    #+#             */
-/*   Updated: 2026/08/15 14:57:08 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/17 13:26:50 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,6 @@ t_list	ft_lstnew(void content)
 
 	node = malloc(sizeof(size_t));
 	node->content = content;
+	node->next = NULL;
 	return (node);
 }
