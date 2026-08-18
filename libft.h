@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:41 by juho              #+#    #+#             */
-/*   Updated: 2026/08/15 16:29:34 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/18 16:43:31 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,13 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }	t_list;
+void ft_lstadd_back(t_list **lst, t_list *new);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
+void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list	ft_lstnew(void *content);
+unsigned int	ft_lstsize(t_list *lst);
 #endif
