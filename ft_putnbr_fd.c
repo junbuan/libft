@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:15:36 by juho              #+#    #+#             */
-/*   Updated: 2026/08/18 14:29:22 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/19 15:32:40 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_putnbr_fd(int n, int fd)
 	number = n;
 	if (n < 0)
 	{
-		ft_putchar_fd('-',fd);
-		number = number *-1;
+		ft_putchar_fd('-', fd);
+		number = number * -1;
 	}
 	if (number >= 10)
 		ft_putnbr_fd(number / 10, fd);
