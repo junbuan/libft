@@ -6,7 +6,7 @@
 #    By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/10 16:15:28 by juho              #+#    #+#              #
-#    Updated: 2026/08/19 15:33:14 by juho             ###   ########.fr        #
+#    Updated: 2026/08/19 16:48:12 by juho             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,9 @@ OBJS_B = $(CFILES_BONUS:.c=.o)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all: ${NAME}
-	$(NORM)
 
-$(NAME): $(OBJS) $(OBJS_B)
-	$(LIBC) $(NAME) $(OBJS) $(OBJS_B)
+$(NAME): $(OBJS)
+	$(LIBC) $(NAME) $(OBJS)
 
 bonus: $(OBJS) $(OBJS_B)
 	$(LIBC) $(NAME) $(OBJS) $(OBJS_B)
