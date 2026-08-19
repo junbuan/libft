@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:14:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/19 16:35:28 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/19 21:01:28 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,18 @@ static int	count_word(char const	*s, char delimiter)
 {
 	int	count;
 	int i;
-
+	
 	i = 0;
 	count = 0;
 	while (s[i])
 	{
 		while (isdelimiter(s[i], delimiter))
-			i++;
+		i++;
 		if (s[i])
 		{
 			count++;
 			while (s[i] && !isdelimiter(s[i], delimiter))
-				i++;
+			i++;
 		}
 	}
 	return (count);
@@ -42,9 +42,9 @@ char **ft_split(char const *s, char c)
 	int	j;
 	char **ptr;
 	int count;
-
+	
 	count = count_word(s, c);
-	*ptr = malloc(sizeof(char *) * (count_word + 1));
+	*ptr = malloc(sizeof(char *) * (count_word(s,c) + 1));
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -62,4 +62,5 @@ char **ft_split(char const *s, char c)
 		while (count < count_word(s,c))
 			ptr[count++] = malloc(sizeof(i - j));
 	}
+	return (ptr);
 }
