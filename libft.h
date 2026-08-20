@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 14:00:41 by juho              #+#    #+#             */
-/*   Updated: 2026/08/19 15:23:46 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/20 18:05:46 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,12 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
+char	*ft_itoa(int n);
+int		ft_atoi(const char *str);
+void	ft_putstr_fd(char *s, int fd);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putnbr_fd(int n, int fd);
 typedef struct s_list
 {
 	void			*content;

@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:14:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/20 21:52:16 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/20 22:01:27 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,3 +72,15 @@ char	**ft_split(char const *s, char c)
 	arr[j] = NULL;
 	return (arr);
 }
+/*
+int main()
+{
+	char a[] = "H,E,L,L,O";
+	char **str = ft_split(a, ',');
+	int i = 0;
+	while (str[i])
+	{
+		printf("%s", str[i++]);
+	}
+}
+*/
