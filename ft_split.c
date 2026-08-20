@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:14:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/20 17:44:08 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/20 21:52:16 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ static int	count_word(char const	*s, char delimiter)
 	while (s[i])
 	{
 		while (isdelimiter(s[i], delimiter))
-		i++;
+			i++;
 		if (s[i])
 		{
 			count++;
 			while (s[i] && !isdelimiter(s[i], delimiter))
-			i++;
+				i++;
 		}
 	}
 	return (count);
