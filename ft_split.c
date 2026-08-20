@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:14:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/19 21:01:28 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/20 17:44:08 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,31 +36,39 @@ static int	count_word(char const	*s, char delimiter)
 	}
 	return (count);
 }
-char **ft_split(char const *s, char c)
+static char	*ft_get_word(char const *s, char d, size_t *i)
 {
-	int	i;
-	int	j;
-	char **ptr;
-	int count;
-	
-	count = count_word(s, c);
-	*ptr = malloc(sizeof(char *) * (count_word(s,c) + 1));
+	size_t	start;
+
+	start = *i;
+	while (s[*i] && !isdelimiter(s[*i], d))
+		(*i)++;
+	return (ft_substr(s, start, *i - start));
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+	size_t	i;
+	size_t	j;
+
 	i = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
+	arr = malloc(sizeof(char *) * (count_word(s, c) + 1));
+	if (!arr)
+		return (NULL);
 	while (s[i])
 	{
-		while (s[i] && s[i] == c)
-		{
+		while (s[i] && isdelimiter(s[i], c))
 			i++;
-		}
-		j = i;
-		while (s[i] != c && s[i])
+		if (s[i])
 		{
-			i++;
-		}
-		count = 0;
-		while (count < count_word(s,c))
-			ptr[count++] = malloc(sizeof(i - j));
+			arr[j] = ft_get_word(s, c, &i);
+			j++;
+		} 
 	}
-	return (ptr);
+	arr[j] = NULL;
+	return (arr);
 }
