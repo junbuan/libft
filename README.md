@@ -37,14 +37,12 @@ make re
 
 The behavior of each function was based on the C manual, as well as research from sources such as Stack Overflow, Medium, and GeeksforGeeks.
 
-The following article was especially useful for understanding `memmove` and how to safely copy memory without losing data:
-
-https://marmota.medium.com/c-language-making-memmove-def8792bb8d5
+The following article was especially useful for understanding `memmove` and how to safely copy memory without losing data: https://marmota.medium.com/c-language-making-memmove-def8792bb8d5
 
 
-Additionally, the following website was immensely helpful for understanding how `Makefile` works:
 
-https://makefiletutorial.com/#getting-started
+Additionally, the following website was immensely helpful for understanding how `Makefile` works: https://makefiletutorial.com/#getting-started
+
 
 
 And also https://pythontutor.com/visualize.html#mode=edit in helping me visualize mostly recursion, memory and pointers
