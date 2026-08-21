@@ -1,6 +1,5 @@
 *This project has been created as part of the 42 curriculum by juho.*
 
-# libft
 
 ## Description
 
@@ -42,9 +41,11 @@ The following article was especially useful for understanding `memmove` and how 
 
 https://marmota.medium.com/c-language-making-memmove-def8792bb8d5
 
-Additionally, the following website was immensely helpful for understanding how 'Makefile' works
+
+Additionally, the following website was immensely helpful for understanding how `Makefile` works:
 
 https://makefiletutorial.com/#getting-started
+
 
 And also https://pythontutor.com/visualize.html#mode=edit in helping me visualize mostly recursion, memory and pointers
 
