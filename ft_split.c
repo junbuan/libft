@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:14:22 by juho              #+#    #+#             */
-/*   Updated: 2026/08/20 22:01:27 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/21 22:13:09 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@ static int	isdelimiter(char c, char delimiter)
 {
 	return (c == delimiter);
 }
-static int	count_word(char const	*s, char delimiter)
+
+static int	count_word(char const *s, char delimiter)
 {
 	int	count;
-	int i;
-	
+	int	i;
+
 	i = 0;
 	count = 0;
 	while (s[i])
@@ -36,6 +37,7 @@ static int	count_word(char const	*s, char delimiter)
 	}
 	return (count);
 }
+
 static char	*ft_get_word(char const *s, char d, size_t *i)
 {
 	size_t	start;
@@ -67,7 +69,7 @@ char	**ft_split(char const *s, char c)
 		{
 			arr[j] = ft_get_word(s, c, &i);
 			j++;
-		} 
+		}
 	}
 	arr[j] = NULL;
 	return (arr);
