@@ -6,7 +6,7 @@
 /*   By: juho <juho@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 14:15:36 by juho              #+#    #+#             */
-/*   Updated: 2026/08/20 17:59:55 by juho             ###   ########.fr       */
+/*   Updated: 2026/08/21 17:20:32 by juho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (number >= 10)
 		ft_putnbr_fd(number / 10, fd);
-	else
-		ft_putchar_fd(number % 10 + '0', fd);
+	ft_putchar_fd(number % 10 + '0', fd);
 }
